@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="tg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOP-NEWS | Хабарҳои Муҳим</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #0f172a; color: white; font-family: 'Segoe UI', sans-serif; }
+        .news-card:hover { transform: translateY(-5px); transition: 0.3s; border-color: #38bdf8; }
+    </style>
+</head>
+<body>
+    <header class="p-6 border-b border-gray-800 flex justify-between items-center bg-slate-900 sticky top-0 z-50">
+        <h1 class="text-2xl font-bold text-sky-400 italic underline">TOP-NEWS.TJ</h1>
+        <nav class="space-x-4 hidden md:block">
+            <a href="#" class="hover:text-sky-400">Технология</a>
+            <a href="#" class="hover:text-sky-400">Варзиш</a>
+            <a href="#" class="hover:text-sky-400">Иқтисод</a>
+        </nav>
+        <button class="bg-sky-500 px-4 py-2 rounded-lg font-bold">Обуна</button>
+    </header>
+
+    <main class="max-w-6xl mx-auto p-6">
+        <h2 class="text-3xl font-bold mb-8 border-l-4 border-sky-500 pl-4">Хабарҳои Асосӣ</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="news-card bg-slate-800 border border-gray-700 rounded-xl overflow-hidden cursor-pointer">
+                <div class="h-48 bg-gradient-to-r from-sky-500 to-indigo-600 flex items-center justify-center text-5xl">📱</div>
+                <div class="p-4">
+                    <span class="text-xs text-sky-400 font-bold uppercase">Технология</span>
+                    <h3 class="text-xl font-bold mt-2">Смартфонҳои нави 2026: Чӣ тағироте моро интизор аст?</h3>
+                    <p class="text-gray-400 mt-2 text-sm">Зеҳни сунъӣ акнун дар дохили ҳар як протсессор ҷойгир мешавад...</p>
+                </div>
+            </div>
+
+            <div class="news-card bg-slate-800 border border-gray-700 rounded-xl overflow-hidden cursor-pointer">
+                <div class="h-48 bg-gradient-to-r from-emerald-500 to-teal-600 flex items-center justify-center text-5xl">⚽</div>
+                <div class="p-4">
+                    <span class="text-xs text-emerald-400 font-bold uppercase">Варзиш</span>
+                    <h3 class="text-xl font-bold mt-2">Ғалабаи таърихии тими миллӣ дар мусобиқаи Осиё!</h3>
+                    <p class="text-gray-400 mt-2 text-sm">Бозингарони мо тавонистанд дар дақиқаҳои охир голи тақдирсозро зананд...</p>
+                </div>
+            </div>
+
+            <div class="news-card bg-slate-800 border border-gray-700 rounded-xl overflow-hidden cursor-pointer">
+                <div class="h-48 bg-gradient-to-r from-orange-500 to-red-600 flex items-center justify-center text-5xl">📈</div>
+                <div class="p-4">
+                    <span class="text-xs text-orange-400 font-bold uppercase">Иқтисод</span>
+                    <h3 class="text-xl font-bold mt-2">Қурби Сомонӣ ва Доллар: Пешгӯии коршиносон</h3>
+                    <p class="text-gray-400 mt-2 text-sm">Вазъияти бозор дар ҳафтаи оянда чӣ гуна хоҳад буд? Таҳлили пурра.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="mt-20 p-10 bg-slate-950 text-center text-gray-500 border-t border-gray-800">
+        <p>&copy; 2026 TOP-NEWS.TJ - Ҳамаи ҳуқуқҳо маҳфузанд.</p>
+    </footer>
+</body>
+</html>
